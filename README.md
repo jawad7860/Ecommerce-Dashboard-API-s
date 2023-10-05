@@ -49,7 +49,7 @@ Start the FastAPI application using the following command:
 
     uvicorn main:app --host 0.0.0.0 --port 8000
 
-##Endpoints
+## Endpoints
 
 The Ecommerce Dashboard API provides the following endpoints:
 
@@ -75,7 +75,7 @@ GET /inventory/update-subtract/{product_id}: Update product quantity in inventor
 
 GET /products/{product_name}/{price}/{category_id}: Register a new product.
 
-##Usage
+## Usage
 
 You can interact with the API by sending HTTP requests to the provided endpoints. Make sure to include valid request parameters and data when necessary.
 
