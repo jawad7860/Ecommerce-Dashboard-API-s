@@ -1,6 +1,7 @@
 # Ecommerce-Dashboard-API-s
 
-Overview
+#Overview
+
 This FastAPI-based API serves as the backend for an Ecommerce Dashboard application. It provides endpoints to retrieve sales data, perform revenue analysis, view inventory status, update inventory levels, and manage products.
 
 Setup Instructions
