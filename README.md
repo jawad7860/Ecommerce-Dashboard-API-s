@@ -49,6 +49,7 @@ Start the FastAPI application using the following command:
 
     uvicorn main:app --host 0.0.0.0 --port 8000
 
+
 ## Endpoints
 
 The Ecommerce Dashboard API provides the following endpoints:
@@ -81,7 +82,8 @@ You can interact with the API by sending HTTP requests to the provided endpoints
 
 For example, to retrieve sales data, make a GET request to /sales/:
 
-##Author
+## Author
+
 Jawad Afzal
 
 
