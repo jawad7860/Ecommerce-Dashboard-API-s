@@ -80,7 +80,7 @@ GET /products/{product_name}/{price}/{category_id}: Register a new product.
 
 You can interact with the API by sending HTTP requests to the provided endpoints. Make sure to include valid request parameters and data when necessary.
 
-For example, to retrieve sales data, make a GET request to /sales/:
+
 
 ## Author
 
