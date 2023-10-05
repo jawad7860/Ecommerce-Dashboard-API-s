@@ -1,53 +1,56 @@
-# Ecommerce-Dashboard-API-s
+# E-commerce Dashboard API
 
-#Overview
+This is a FastAPI-based RESTful API for an E-commerce dashboard, allowing you to retrieve sales data, analyze revenue, manage inventory, and more.
 
-This FastAPI-based API serves as the backend for an Ecommerce Dashboard application. It provides endpoints to retrieve sales data, perform revenue analysis, view inventory status, update inventory levels, and manage products.
+## Getting Started
 
-Setup Instructions
-To run the Ecommerce Dashboard API locally, follow these setup instructions:
+### Prerequisites
 
-Clone the Repository
+- Python 3.6+
+- MySQL Server
+- Git (optional)
 
-Clone this repository to your local machine:
+### Installation
 
-bash
-Copy code
-git clone https://github.com/yourusername/ecommerce-dashboard-api.git
-Install Dependencies
+1. Clone the repository:
 
-Navigate to the project directory and install the required Python dependencies using pip:
+    git clone https://github.com/yourusername/ecom-dashboard-api.git
+   
+2. Install the required packages:
 
-bash
-Copy code
-cd ecommerce-dashboard-api
-pip install -r requirements.txt
-Database Configuration
+    pip install -r requirements.txt
 
-Create a MySQL database named ecom_dashboard and update the database configuration in the main.py file with your MySQL credentials:
+3. Database Configuration
 
-python
-Copy code
-connection = mysql.connector.connect(
-    host="localhost",
-    user="yourusername",
-    password="yourpassword",
-    database="ecom_dashboard"
-)
-Run the Application
+Update the database configuration in the main.py file with your MySQL credentials:
+
+    mysql.connector.connect(
+        host="localhost",
+        user="yourusername",
+        password="yourpassword",
+        database="ecom_dashboard"
+    )
+    
+4. Create Database
+   
+Open MySQL shell in the project directory and run the sql script through following command
+
+    mysql -u [yourusername] -p < database.sql
+
+5. Install Dependencies
+
+Navigate to the project directory and install the required Python dependencies
+
+    pip install -r requirements.txt
+
+6. Run the Application
 
 Start the FastAPI application using the following command:
 
-css
-Copy code
-uvicorn main:app --host 0.0.0.0 --port 8000
-This will start the API server at http://127.0.0.1:8000.
+    uvicorn main:app --host 0.0.0.0 --port 8000
 
-Dependencies
-FastAPI: A modern, fast web framework for building APIs with Python.
-uvicorn: ASGI server for running FastAPI applications.
-mysql-connector-python: MySQL connector for Python to interact with the database.
-Endpoints
+##Endpoints
+
 The Ecommerce Dashboard API provides the following endpoints:
 
 GET /sales/: Retrieve sales data.
@@ -70,16 +73,16 @@ GET /inventory/update-add/{product_id}: Update product quantity in inventory by 
 
 GET /inventory/update-subtract/{product_id}: Update product quantity in inventory by subtracting.
 
-POST /products/: Register a new product.
+GET /products/{product_name}/{price}/{category_id}: Register a new product.
 
-Usage
+##Usage
+
 You can interact with the API by sending HTTP requests to the provided endpoints. Make sure to include valid request parameters and data when necessary.
 
 For example, to retrieve sales data, make a GET request to /sales/:
 
-arduino
-Copy code
-GET http://127.0.0.1:8000/sales/
-Author
-Your Name
-Email: your.email@example.com
+##Author
+Jawad Afzal
+
+
+
